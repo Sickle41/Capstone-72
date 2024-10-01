@@ -1,3 +1,9 @@
+**Miniature Paint Scheme Gallery**
+
+The purpose of this APP is to allow users to share the various methods they have found to paint miniatures with others. 
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
