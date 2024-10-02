@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left (or change to 'space-between' for spacing) */
+    background-color: var(--dark); /* Navbar background color */
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%; /* Full width */
+    position: fixed; /* Fix it to the top */
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid var(--primary); /* Border at the bottom */
+    z-index: 1000; /* Ensure it stays above the content */
+}
+
+.navbar-item-group {
+    display: flex; /* Flexbox for horizontal alignment */
+    gap: 2rem; /* Space between items */
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    list-style-type: none; /* Remove list styling */
+    color: var(--offWhite);
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 1px;
+    color: var(--offWhite); /* Default link color */
+    font-size: 16px;
+    padding: 1rem; /* Add padding around each link */
+}
+
+.navbar-link:hover {
+    color: var(--primary); /* Hover color */
+}
+
+/* Ensure the rest of the content doesn't overlap with the navbar */
+body {
+    margin: 0;
+}
+
+#root {
+    padding-top: 80px; /* Adjust this based on the height of your navbar */
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
