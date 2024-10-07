@@ -19,9 +19,11 @@ export const Login = () => {
         if (user.password === password) {
           // Replace with a secure password verification
           localStorage.setItem(
-            "thorn_user",
+            "user",
             JSON.stringify({
-              id: user.id,
+              id: parseInt(user.id),
+              email: user.email,
+              name: user.name
             })
           );
 
