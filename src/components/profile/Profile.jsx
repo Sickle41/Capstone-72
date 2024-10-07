@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { getPaintSchemesByUserId,deletePaintSchemeById } from '../../services/ProfileServices';
 
 export const Profile = () => {
   const [user, setUser] = useState(null);
@@ -18,17 +19,14 @@ export const Profile = () => {
 
   // Fetch the paint schemes uploaded by the current user
   const fetchUserPaintSchemes = (userId) => {
-    fetch(`http://localhost:8088/PaintSchemes?uploaderId=${userId}`)
-      .then(response => response.json())
+    getPaintSchemesByUserId(userId) // Using service function
       .then(data => setPaintSchemes(data))
       .catch(error => console.error('Error fetching paint schemes:', error));
   };
 
   // Handle deleting a paint scheme
   const handleDelete = (schemeId) => {
-    fetch(`http://localhost:8088/PaintSchemes/${schemeId}`, {
-      method: 'DELETE',
-    })
+    deletePaintSchemeById(schemeId) // Using service function
       .then(() => {
         // Remove the deleted scheme from the state
         setPaintSchemes(paintSchemes.filter(scheme => scheme.id !== schemeId));
