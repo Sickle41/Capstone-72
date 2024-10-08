@@ -5,6 +5,7 @@ import './App.css'
 import { Login } from './components/auth/Login'
 import { Register } from './components/auth/Register'
 import { AddNewScheme } from './components/paintScheme/PaintScheme'
+import { EditScheme } from './components/edit/Edit'
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path='/add-new-scheme' element={<AddNewScheme />} />
+      <Route path="/edit-scheme/:id" element={<EditScheme />} />
+
 
       <Route 
       path="*"

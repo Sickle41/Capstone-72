@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getPaintSchemesByUserId,deletePaintSchemeById } from '../../services/ProfileServices';
+import "./Profile.css"
 
 export const Profile = () => {
   const [user, setUser] = useState(null);

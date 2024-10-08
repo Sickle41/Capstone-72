@@ -1,0 +1,113 @@
+/* Profile container */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .profile-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .profile-container strong {
+    color: #333;
+  }
+  
+  /* Paint schemes section */
+  .paint-schemes {
+    margin-top: 30px;
+  }
+  
+  .scheme-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .scheme-card img {
+    width: 300px;      /* Fixed width */
+    height: 200px;     /* Fixed height */
+    object-fit: contain; /* Show the entire image */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #e0e0e0; /* Light background to fill any extra space */
+  }
+  
+  .scheme-card h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .scheme-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Add New Scheme button */
+  .add-new-scheme-button {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  /* Edit and Delete buttons */
+  .scheme-card button {
+    margin-right: 10px;
+  }
+  
+  .scheme-card a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .scheme-card a button {
+    background-color: #007BFF;
+  }
+  
+  .scheme-card a button:hover {
+    background-color: #0056b3;
+  }
+  
+  .scheme-card button.delete-btn {
+    background-color: #FF4136;
+  }
+  
+  .scheme-card button.delete-btn:hover {
+    background-color: #c4372d;
+  }
+  
