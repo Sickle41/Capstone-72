@@ -3,6 +3,7 @@ import { Welcome } from "../components/welcome/Welcome";
 import { Navbar } from "../components/nav/Navbar";
 import { Login } from "../components/auth/Login";
 import { Profile } from "../components/profile/Profile";
+import { Gallery } from "../components/gallery/Gallery";
 
 export const ApplicationViews = () => {
 
@@ -20,6 +21,7 @@ export const ApplicationViews = () => {
                 <Route index element={<Welcome />} />
 
                 <Route path="/profile" element={<Profile />} />
+                <Route path="/gallery" element={<Gallery />} />
             </Route>
         </Routes>
         </>
