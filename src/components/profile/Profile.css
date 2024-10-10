@@ -61,14 +61,11 @@
   
   /* Buttons */
   button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: background-color 0.3s ease;
+    background-color: initial;
+    color: initial;
+    padding: initial;
+    border: initial;
+    cursor: initial;
   }
   
   button:hover {
@@ -83,6 +80,7 @@
   .add-new-scheme-button {
     margin-bottom: 20px;
     display: inline-block;
+    background-color: #5ea3ed;
   }
   
   /* Edit and Delete buttons */
@@ -96,18 +94,20 @@
   }
   
   .scheme-card a button {
-    background-color: #007BFF;
+    background-color: #0ee42e;
   }
   
   .scheme-card a button:hover {
     background-color: #0056b3;
   }
   
-  .scheme-card button.delete-btn {
-    background-color: #FF4136;
-  }
-  
-  .scheme-card button.delete-btn:hover {
-    background-color: #c4372d;
-  }
-  
+/* Ensure delete button has the desired background color */
+.scheme-card button.delete-btn {
+  background-color: #c4372d !important; /* Force the red background */
+  color: white !important; /* Ensure the text is white */
+  border: none;
+}
+
+.scheme-card button.delete-btn:hover {
+  background-color: #ff4d4d !important; /* A brighter red on hover */
+}

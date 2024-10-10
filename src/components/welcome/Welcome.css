@@ -1,0 +1,39 @@
+/* Welcome.css */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full viewport height */
+    background-color: #6ea5b4; /* Dark background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 2rem; /* Padding around the content */
+    font-family: 'Arial', sans-serif; /* Font style */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .welcome-container h1 {
+    font-size: 3.5em; /* Larger font size */
+    line-height: 1.2; /* Spacing between lines */
+    margin-bottom: 1rem; /* Space below the title */
+  }
+  
+  .welcome-container span {
+    display: block; /* Each part of the title on a new line */
+    transition: transform 0.3s; /* Smooth transition effect */
+  }
+  
+  .welcome-container span:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .welcome-container h1 span:first-child {
+    color: #646cff; /* Different color for the first part */
+  }
+  
+  .welcome-container h1 span:last-child {
+    color: #f9c74f; /* Different color for the second part */
+  }
+  

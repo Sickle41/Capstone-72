@@ -1,12 +1,11 @@
 /* App.css */
-
 #root {
-  padding-top: 80px; /* Ensure the navbar does not overlap content */
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 2rem; /* Simplified padding for better structure */
+  padding: 0 2rem;
   text-align: center;
 }
+
 
 .logo {
   height: 6em;

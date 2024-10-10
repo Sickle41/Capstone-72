@@ -1,0 +1,91 @@
+/* Container for the add scheme form */
+.add-scheme-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title styling */
+.add-scheme-container h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+form label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Input and select styling */
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+/* Hover and focus effects for inputs */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2396e3;
+    outline: none;
+}
+
+/* Textarea styling */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button styling */
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #2396e3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive form */
+@media (max-width: 768px) {
+    .add-scheme-container {
+        padding: 15px;
+    }
+
+    form label {
+        font-size: 1em;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
