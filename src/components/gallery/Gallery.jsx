@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAllPaintSchemes } from '../../services/PaintSchemeServices';
 import { getLikesBySchemeAndUser, createLike, deleteLike } from '../../services/GalleryServices';
+import "./Gallery.css"
 
 export const Gallery = () => {
   const [paintSchemes, setPaintSchemes] = useState([]);
@@ -92,10 +93,10 @@ export const Gallery = () => {
             <img src={scheme.schemeImage} alt={scheme.name} />
             <p>{scheme.description}</p>
             <div className="like-section">
-              <button onClick={() => toggleLike(scheme.id)}>
+              <button className='like-btn' onClick={() => toggleLike(scheme.id)}>
                 {scheme.likedByUser ? 'Unlike' : 'Like'}
               </button>
-              <span>{scheme.likeCount} Likes</span>
+              <span className='like-count'>{scheme.likeCount} Likes</span>
             </div>
           </div>
         ))}

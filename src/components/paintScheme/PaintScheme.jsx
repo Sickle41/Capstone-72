@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { addNewPaintScheme, getAllSystems } from "../../services/PaintSchemeServices";
-
+import "./PaintScheme.css"
 
 export const AddNewScheme = () => {
   const [name, setName] = useState("");

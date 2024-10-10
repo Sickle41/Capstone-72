@@ -1,50 +1,61 @@
+/* Navbar Container */
 .navbar {
     display: flex;
-    justify-content: flex-start; /* Align items to the left (or change to 'space-between' for spacing) */
-    background-color: var(--dark); /* Navbar background color */
-    margin: 0;
-    padding: 0.5rem;
-    width: 100%; /* Full width */
-    position: fixed; /* Fix it to the top */
-    top: 0;
-    left: 0;
-    border-bottom: 3px solid var(--primary); /* Border at the bottom */
-    z-index: 1000; /* Ensure it stays above the content */
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    width: 100%;
+    height: 60px;
+    border-bottom: 3px solid var(--primary);
+    padding: 0 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
+
+/* Navbar Item Group */
 .navbar-item-group {
     display: flex; /* Flexbox for horizontal alignment */
-    gap: 2rem; /* Space between items */
+    justify-content: space-between; /* Spread items evenly with space between */
+    align-items: center; /* Align items vertically in the center */
+    width: 100%; /* Make sure the item group spans the full width of the navbar */
     list-style: none; /* Remove default bullet points */
     padding: 0;
     margin: 0;
+    gap: 1rem; /* Optional: adjust spacing between items */
 }
 
+
+/* Individual Navbar Item */
 .navbar-item {
     list-style-type: none; /* Remove list styling */
     color: var(--offWhite);
 }
 
+/* Navbar Link Styling */
 .navbar-link {
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
     letter-spacing: 1px;
-    color: var(--offWhite); /* Default link color */
+    color: white; /* Default link color */
+    background-color: rgb(48, 107, 195);
     font-size: 16px;
     padding: 1rem; /* Add padding around each link */
 }
 
+/* Hover Effect */
 .navbar-link:hover {
     color: var(--primary); /* Hover color */
 }
 
-/* Ensure the rest of the content doesn't overlap with the navbar */
+/* Body Padding to Prevent Overlap */
 body {
     margin: 0;
 }
 
+/* Root Element to Ensure Content Starts Below the Navbar */
 #root {
-    padding-top: 80px; /* Adjust this based on the height of your navbar */
+    padding-top: 80px; /* Adjust based on the navbar height */
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;

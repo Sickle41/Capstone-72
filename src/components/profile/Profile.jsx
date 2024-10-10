@@ -43,7 +43,7 @@ export const Profile = () => {
           <p><strong>Name:</strong> {user.name}</p>
           <p><strong>Email:</strong> {user.email}</p>
           <Link to="/add-new-scheme">
-            <button>Add New Paint Scheme</button>
+            <button className='add-new-scheme-button'>Add New Paint Scheme</button>
           </Link>
           
           <h3>Your Uploaded Paint Schemes</h3>
@@ -56,7 +56,8 @@ export const Profile = () => {
                 <Link to={`/edit-scheme/${scheme.id}`}>
                   <button>Edit</button>
                 </Link>
-                <button onClick={() => handleDelete(scheme.id)}>Delete</button>
+                <button className="delete-btn" onClick={() => handleDelete(scheme.id)}>
+                  Delete</button>
               </div>
             ))
           ) : (
